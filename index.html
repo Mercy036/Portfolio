@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-black text-white">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ansh Mahajan - Portfolio</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="font-sans min-h-screen p-4">
-    <script src="script.js"></script>
-  </body>
+</head>
+<body class="bg-black flex flex-col items-center pt-5">
+
+    <nav class="bg-zinc-800 p-2 rounded-3xl flex items-center space-x-1 mb-24">
+        
+        <a href="#" class="bg-zinc-600 text-white px-3 py-1 rounded-full text-sm font-medium">HOME</a>
+
+        <a href="#" class="text-gray-300 hover:bg-zinc-700 hover:text-white px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300">
+            PROJECTS
+        </a>
+        <a href="#" class="text-gray-300 hover:bg-zinc-700 hover:text-white px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300">
+            CONTACT
+        </a>
+    </nav>
+    <div class="text-center text-white">
+        <h1 class="text-4xl font-bold mb-4">Welcome to My Website</h1>
+        <p class="text-lg">This is a simple navbar example using Tailwind CSS.</p>
+    </div>
+    
+</body>
 </html>
