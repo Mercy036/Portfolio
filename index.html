@@ -6,38 +6,119 @@
   <title>Ansh Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black pt-8">
+<body class="bg-black min-h-screen p-4">
 
-  <!- Navbar ->
-  <nav class="flex justify-center mb-24">
-    <div class="bg-zinc-800 p-2 rounded-3xl flex items-center space-x-1">
-      <a class="bg-zinc-600 text-white px-3 py-1 rounded-full text-sm font-medium">HOME</a>
-      <a class="text-gray-300 hover:bg-zinc-700 hover:text-white px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300">
-        PROJECTS</a>
-      <a class="text-gray-300 hover:bg-zinc-700 hover:text-white px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300">CONTACT</a>
+  <!-- Navbar -->
+  <nav class="flex justify-center mb-8">
+    <div class="bg-zinc-800 p-1 rounded-2xl flex items-center space-x-1">
+      <a class="bg-zinc-600 text-white px-3 py-1.5 rounded-full text-xs font-medium">HOME</a>
+      <a class="text-gray-300 hover:bg-zinc-700 hover:text-white px-3 py-1.5 rounded-full text-xs font-medium transition-colors duration-300">PROJECTS</a>
+      <a class="text-gray-300 hover:bg-zinc-700 hover:text-white px-3 py-1.5 rounded-full text-xs font-medium transition-colors duration-300">CONTACT</a>
     </div>
   </nav>
 
+  <!-- Main Container -->
+  <div class="max-w-5xl mx-auto">
+    <div class="grid grid-cols-12 gap-3">
+      
+      <!-- Left Column -->
+      <div class="col-span-8 space-y-3">
+        <!-- ABOUT ME - Top (Full Width) -->
+        <div class="bg-zinc-800 p-4 rounded-xl">
+          <h1 class="text-white font-bold text-base uppercase mb-3">ABOUT ME</h1>
+          <p class="text-gray-300 text-xs leading-relaxed">
+            Hi, I'm Ansh Mahajan, a passionate Full Stack Developer currently in my 2nd year of college. I love building web applications from the ground up and constantly learning new technologies to sharpen my skills across both frontend and backend development.
+          </p>
+        </div>
 
-<!-- ABOUT ME BOX -->
-<div class="ml-[565px]">
-  <div class="bg-zinc-900 p-5 rounded-2xl h-auto max-w-xl">
-    <h1 class="text-white font-bold text-lg uppercase">ABOUT ME</h1>
-    <p class="text-white mt-4">
-      Hi, I'm Ansh Mahajan, a passionate Full Stack Developer currently in my 2nd year of college. I love building web applications from the ground up and constantly learning new technologies to sharpen my skills across both frontend and backend development.
-    </p>
+        <!-- Middle and Bottom Rows Combined -->
+        <div class="grid grid-cols-2 gap-3">
+          <!-- Left Side - Student & Tech Stack -->
+          <div class="space-y-3">
+            <!-- Student & Backend Developer -->
+            <div class="bg-teal-600 text-white rounded-xl flex items-center justify-center p-4 h-24">
+              <div class="text-center">
+                <div class="text-sm font-bold leading-tight">Student &</div>
+                <div class="text-sm font-bold leading-tight">Backend Developer</div>
+              </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="bg-zinc-800 p-4 rounded-xl">
+              <h3 class="text-white font-bold text-xs uppercase mb-3 text-center">Tech Stack</h3>
+              <div class="grid grid-cols-4 gap-1.5">
+                <!-- Row 1 -->
+                <div class="w-6 h-6 bg-yellow-500 rounded flex items-center justify-center text-black font-bold text-xs">JS</div>
+                <div class="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-white font-bold text-xs">TS</div>
+                <div class="w-6 h-6 bg-green-600 rounded flex items-center justify-center text-white font-bold text-xs">V</div>
+                <div class="w-6 h-6 bg-gray-600 rounded flex items-center justify-center text-white text-xs">⚙️</div>
+                <!-- Row 2 -->
+                <div class="w-6 h-6 bg-gray-700 rounded flex items-center justify-center text-white text-xs">⚙️</div>
+                <div class="w-6 h-6 bg-blue-400 rounded flex items-center justify-center text-white text-xs">~</div>
+                <div class="w-6 h-6 bg-purple-600 rounded flex items-center justify-center text-white font-bold text-xs">V</div>
+                <div class="w-6 h-6 bg-gray-500 rounded flex items-center justify-center text-white text-xs">⚪</div>
+                <!-- Row 3 -->
+                <div class="w-6 h-6 bg-orange-500 rounded flex items-center justify-center text-white font-bold text-xs">U</div>
+                <div class="w-6 h-6 bg-red-500 rounded flex items-center justify-center text-white font-bold text-xs">/</div>
+                <div class="w-6 h-6 bg-gray-400 rounded flex items-center justify-center text-black text-xs">ex</div>
+                <div class="w-6 h-6 bg-green-400 rounded flex items-center justify-center text-white text-xs">◆</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side - Profile & Education -->
+          <div class="space-y-3">
+            <!-- Profile Section -->
+            <div class="bg-zinc-800 rounded-xl flex flex-col items-center justify-center p-4" style="height: 200px;">
+              <!-- Profile Icon -->
+              <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mb-2">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <h1 class="text-blue-400 font-bold text-xs">ANSH MAHAJAN</h1>
+            </div>
+
+            <!-- Education Section -->
+            <div class="bg-zinc-800 p-4 rounded-xl">
+              <h3 class="text-white font-bold text-xs uppercase mb-3">EDUCATION</h3>
+              <div class="space-y-1">
+                <div>
+                  <h4 class="text-white font-medium text-xs">Bachelor of Technology</h4>
+                  <p class="text-gray-400 text-xs">Computer Science Engineering</p>
+                  <p class="text-gray-500 text-xs">2023 - 2027</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-span-4 space-y-3">
+        <!-- Forest/Galaxy Image -->
+        <div class="bg-zinc-800 p-2 rounded-xl">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-gradient-to-br from-blue-900 via-purple-900 to-pink-800">
+            <div class="w-full h-full flex items-center justify-center text-white text-xs">
+              Galaxy/Forest Image
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote Section -->
+        <div class="bg-zinc-800 p-4 rounded-xl">
+          <div class="text-center">
+            <div class="text-teal-400 font-bold text-xl mb-1">love</div>
+            <div class="text-white font-bold text-xl mb-1">yourself</div>
+            <div class="text-teal-400 font-bold text-xl mb-1">enough</div>
+            <div class="text-white font-bold text-lg mb-1">to work</div>
+            <div class="text-teal-400 font-bold text-xl">harder.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
-
-<!-- BLUE BOX BELOW -->
-<div class="ml-[565px] mt-4">
-  <div class="bg-cyan-700 text-white font-bold text-center p-4 rounded-2xl w-[300px]">
-    Student &<br>Backend Developer
-  </div>
-</div>
-
-
-
 
 </body>
 </html>
