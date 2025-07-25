@@ -1,118 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ansh Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-black min-h-screen p-4">
+
+<body>
 
   <!-- Navbar -->
-  <nav class="flex justify-center mb-24">
-    <div class="bg-zinc-800 p-1 rounded-2xl flex items-center space-x-1">
-      <a class="bg-zinc-600 text-white px-3 py-1.5 rounded-full text-xs font-medium">HOME</a>
-      <a class="text-gray-300 hover:bg-zinc-700 hover:text-white px-3 py-1.5 rounded-full text-xs font-medium transition-colors duration-300">PROJECTS</a>
-      <a class="text-gray-300 hover:bg-zinc-700 hover:text-white px-3 py-1.5 rounded-full text-xs font-medium transition-colors duration-300">CONTACT</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-link active">HOME</a>
+      <a href="#" class="nav-link">PROJECTS</a>
+      <a href="#" class="nav-link">CONTACT</a>
     </div>
   </nav>
 
   <!-- Main Container -->
-  <div class="max-w-5xl mx-auto">
-    <div class="grid grid-cols-12 gap-3">
-      
+  <div class="main-container">
+    <div class="grid-container">
+
       <!-- Left Column -->
-      <div class="col-span-8 space-y-3">
+      <div class="left-column">
         <!-- ABOUT ME - Top (Full Width) -->
-        <div class="bg-zinc-800 p-2 rounded-xl w-[550px] h-[150px] ml-20">
-          <h1 class="text-white font-bold text-base uppercase mb-3">ABOUT ME</h1>
-          <p class="text-gray-300 text-xs leading-relaxed">
-            Hi, I'm Ansh Mahajan, a passionate Full Stack Developer currently in my 2nd year of college. I love building web applications from the ground up and constantly learning new technologies to sharpen my skills across both frontend and backend development.
+        <div class="about-section">
+          <h1 class="section-title">ABOUT ME</h1>
+          <p class="about-text">
+            Hi, I'm Ansh Mahajan, a passionate Full Stack Developer currently in my 2nd year of college. I love building
+            web applications from the ground up and constantly learning new technologies to sharpen my skills across
+            both frontend and backend development.
           </p>
         </div>
 
         <!-- Middle and Bottom Rows Combined -->
-        <div class="grid grid-cols-2 gap-3">
+        <div class="content-grid">
           <!-- Left Side - Student & Tech Stack -->
-          <div class="space-y-3">
+          <div class="left-content">
             <!-- Student & Backend Developer -->
-            <div class="bg-teal-600 text-white rounded-xl flex items-center justify-center p-4 h-24 w-[200px] ml-20">
-              <div class="text-center">
-                <div class="text-sm font-bold leading-tight">Student &</div>
-                <div class="text-sm font-bold leading-tight">Backend Developer</div>
+            <div class="student-card">
+              <div class="student-text">
+                <div class="student-line">
+                <h1> <b> Student & </b></h1>
+                </div>
+                <div class="student-line">
+                  <h1> <b>Backend Developer</b>
+                  </h1> 
+                  </div>
               </div>
             </div>
 
             <!-- Tech Stack -->
-            <div class="bg-zinc-800 p-4 rounded-xl w-[200px] ml-20 h-[250px]">
-              <h3 class="text-white font-bold text-xs uppercase mb-3 text-center">Tech Stack</h3>
-              <div class="grid grid-cols-4 gap-1.5">
+            <div class="tech-stack-card">
+              <h3 class="tech-title">Tech Stack</h3>
+              <div class="tech-grid">
                 <!-- Row 1 -->
-                <div class="w-6 h-6 bg-yellow-500 rounded flex items-center justify-center text-black font-bold text-xs">JS</div>
-                <div class="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-white font-bold text-xs">TS</div>
-                <div class="w-6 h-6 bg-green-600 rounded flex items-center justify-center text-white font-bold text-xs">V</div>
-                <div class="w-6 h-6 bg-gray-600 rounded flex items-center justify-center text-white text-xs">⚙️</div>
+                <div class="tech-item js">JS</div>
+                <div class="tech-item ts">TS</div>
+                <div class="tech-item vue">V</div>
+                <div class="tech-item gray1">⚙️</div>
                 <!-- Row 2 -->
-                <div class="w-6 h-6 bg-gray-700 rounded flex items-center justify-center text-white text-xs">⚙️</div>
-                <div class="w-6 h-6 bg-blue-400 rounded flex items-center justify-center text-white text-xs">~</div>
-                <div class="w-6 h-6 bg-purple-600 rounded flex items-center justify-center text-white font-bold text-xs">V</div>
-                <div class="w-6 h-6 bg-gray-500 rounded flex items-center justify-center text-white text-xs">⚪</div>
+                <div class="tech-item gray2">⚙️</div>
+                <div class="tech-item blue">~</div>
+                <div class="tech-item purple">V</div>
+                <div class="tech-item gray3">⚪</div>
                 <!-- Row 3 -->
-                <div class="w-6 h-6 bg-orange-500 rounded flex items-center justify-center text-white font-bold text-xs">U</div>
-                <div class="w-6 h-6 bg-red-500 rounded flex items-center justify-center text-white font-bold text-xs">/</div>
-                <div class="w-6 h-6 bg-gray-400 rounded flex items-center justify-center text-black text-xs">ex</div>
-                <div class="w-6 h-6 bg-green-400 rounded flex items-center justify-center text-white text-xs">◆</div>
+                <div class="tech-item orange">U</div>
+                <div class="tech-item red">/</div>
+                <div class="tech-item gray4">ex</div>
+                <div class="tech-item green">◆</div>
               </div>
             </div>
           </div>
 
           <!-- Right Side - Profile & Education -->
-          <div class="space-y-3">
+          <div class="right-content">
             <!-- Profile Section -->
-            <div class="bg-zinc-800 rounded-xl flex flex-col items-center justify-center p-4" style="height: 200px;">
+            <div class="profile-card">
               <!-- Profile Icon -->
-              <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mb-2">
-                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+              <div class="profile-icon">
+                <svg class="profile-svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                  </path>
                 </svg>
               </div>
-              <h1 class="text-blue-400 font-bold text-xs">ANSH MAHAJAN</h1>
+              <h1 class="profile-name">ANSH MAHAJAN</h1>
             </div>
+            <div class="right-column">
+              <!-- Forest/Galaxy Image -->
+              <div class="image-card">
+              </div>
 
-            <!-- Education Section -->
-            <div class="bg-zinc-800 p-4 rounded-xl">
-              <h3 class="text-white font-bold text-xs uppercase mb-3">EDUCATION</h3>
-              <div class="space-y-1">
-                <div>
-                  <h4 class="text-white font-medium text-xs">Bachelor of Technology</h4>
-                  <p class="text-gray-400 text-xs">Computer Science Engineering</p>
-                  <p class="text-gray-500 text-xs">2023 - 2027</p>
-                </div>
+              <!-- Quote Section -->
+              <div class="quote-card">
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Section -->
+          <div class="education-card">
+            <h3 class="education-title">EDUCATION</h3>
+            <div class="education-content">
+              <div class="education-item">
+                <h4 class="degree">Bachelor of Technology</h4>
+                <p class="field">Computer Science Engineering</p>
+                <p class="years">2023 - 2027</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Right Column -->
-      <div class="col-span-4 space-y-3">
-        <!-- Forest/Galaxy Image -->
-        <div class="bg-zinc-800 p-2 rounded-xl">
-          <div class="w-full h-48 rounded-lg overflow-hidden">
-            <img src="assets\forest.jpeg" alt="Forest Image" class="w-full h-full object-cover rounded-lg" />
-          </div>
-        </div>
-
-        <!-- Quote Section -->
-        <div class="bg-zinc-800 p-4 rounded-xl">
-          <div class="w-full rounded-lg overflow-hidden">
-            <img src="assets\quote.png" alt="Motivational Quote" class="w-full object-contain rounded-lg" />
-          </div>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Right Column -->
+
+
+  </div>
   </div>
 
 </body>
+
 </html>

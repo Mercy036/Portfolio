@@ -1,0 +1,428 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  min-height: 100vh;
+  padding: 1em;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6em;
+}
+
+.nav-container {
+  background-color: #27272a;
+  padding: 0.25em;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0.375em 0.75em;
+  border-radius: 620em;
+  font-size: 0.75em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link.active {
+  background-color: #52525b;
+  color: white;
+}
+
+.nav-link:not(.active) {
+  color: #d1d5db;
+}
+
+.nav-link:not(.active):hover {
+  background-color: #374151;
+  color: white;
+}
+
+/* Main Container */
+.main-container {
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.75em;
+}
+
+/* Left Column */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+/* About Section */
+.about-section {
+  background-color: #27272a;
+  padding: 0.5em;
+  border-radius: 0.75em;
+  width: 26em;
+  height: 8em;
+  margin-left: 18em;
+}
+
+.section-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75em;
+}
+
+.about-text {
+  color: #d1d5db;
+  font-size: 0.75em;
+  line-height: 1.6;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75em;
+}
+
+/* Left Content */
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+/* Student Card */
+.student-card {
+  background-color: rgba(14, 91, 114, 1);
+  color: white;
+  border-radius: 0.75em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  height: 6em;
+  width: 13.25em;
+  margin-left: 18em;
+}
+
+.student-text {
+  text-align: center;
+}
+
+.student-line {
+  font-size: 0.65em;
+  font-weight: bolder;
+  line-height: 1.2;
+  font-family: Roboto;
+} 
+
+/* Tech Stack Card */
+.tech-stack-card {
+  background-color: #27272a;
+  padding: 1em;
+  border-radius: 0.75em;
+  width: 13.25em;
+  margin-left: 18em;
+  height: 18em;
+}
+
+.tech-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75em;
+  text-align: center;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.375em;
+}
+
+.tech-item {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Tech Stack Colors */
+.tech-item.js {
+  background-color: #eab308;
+  color: black;
+}
+
+.tech-item.ts {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.tech-item.vue {
+  background-color: #16a34a;
+  color: white;
+}
+
+.tech-item.gray1 {
+  background-color: #4b5563;
+  color: white;
+}
+
+.tech-item.gray2 {
+  background-color: #374151;
+  color: white;
+}
+
+.tech-item.blue {
+  background-color: #60a5fa;
+  color: white;
+}
+
+.tech-item.purple {
+  background-color: #9333ea;
+  color: white;
+}
+
+.tech-item.gray3 {
+  background-color: #6b7280;
+  color: white;
+}
+
+.tech-item.orange {
+  background-color: #f97316;
+  color: white;
+}
+
+.tech-item.red {
+  background-color: #ef4444;
+  color: white;
+}
+
+.tech-item.gray4 {
+  background-color: #9ca3af;
+  color: black;
+}
+
+.tech-item.green {
+  background-color: #4ade80;
+  color: white;
+}
+
+/* Right Content */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #27272a;
+  border-radius: 0.75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 16px; */
+  height: 13em;
+  width: 12em;
+  position: absolute;
+  top: 17.75em;
+  right: 44em;
+}
+
+.profile-icon {
+  width: 3.5em;
+  height: 3.5em;
+  background-image: url('assets/profile.png');
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.profile-svg {
+  width: 1.25em;
+  height: 1.25em;
+  color: white;
+}
+
+.profile-name {
+  color: rgba(100, 148, 226, 1);
+  font-weight: 900;
+  font-size: 1.1em;
+  margin-left: 0.3em;
+  margin-top: 1em;
+  font-family: poppins, sans-serif;
+  right: 2em;
+}
+
+/* Education Card */
+.education-card {
+  background-color: #27272a;
+  padding: 1em;
+  border-radius: 0.75em;
+  height: 11em;
+  width: 24.4em;
+  position: absolute;
+  top: 31.5em;
+  right: 31.65em;
+}
+
+.education-title {
+  color: white;
+  font-weight: bold;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  margin-bottom: 0.75em;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875em;
+}
+
+.degree {
+  color: white;
+  font-weight: 500;
+  font-size: 0.75em;
+}
+
+.field {
+  color: #9ca3af;
+  font-size: 0.75em;
+}
+
+.years {
+  color: #6b7280;
+  font-size: 0.75em;
+}
+
+/* Right Column */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+/* Image Card */
+.image-card {
+  background-color: #27272a;
+  padding: 0.5em;
+  border: 0px;
+  border-radius: 0.75em;
+  background-image: url('assets/forest_new.jpeg');
+  background-size: cover;
+  width: 11.5em;
+  height: 15em;
+  position: absolute;
+  right: 31.7em;
+  top: 9em;
+  
+}
+
+/* .image-container {
+  width: 100%;
+  height: 192px;
+  border: 0px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-image: url('assets/forest.jpeg');
+  background-size: cover;
+
+} */
+
+.forest-image {
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border: 0px;
+  border-radius: 0.5em;
+}
+
+/* Quote Card */
+.quote-card {
+  background-color: #27272a;
+  padding: 1em;
+  border: 0px solid #ffffff;
+  border-radius: 0.75em;
+  height: 7em;
+  width: 11.5em;
+  background-image: url('assets/quote.png');
+  background-size: cover;
+  position: absolute;
+  right: 31.7em;
+  top: 23.5em;
+}
+
+/* .quote-container {
+  width: 100%;
+  border-radius: 8px;
+  border: 0px;
+  overflow: hidden;
+  background-image: url('assets/quote.png');
+  background-size: cover;
+} */
+
+.quote-image {
+  width: 100%;
+  object-fit: contain;
+  border: 0px;
+  border-radius: 0.75em;
+}
+
+/* Responsive Design */
+@media (max-width: 48em) {
+  .main-container {
+    padding: 0 0.75em;
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  
+  .about-section {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .student-card,
+  .tech-stack-card {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .navbar {
+    margin-bottom: 3em;
+  }
+}
