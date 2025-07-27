@@ -5,22 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ansh Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
@@ -38,7 +30,7 @@
       <div class="grid-container">
         <!-- Left Column -->
         <div class="left-column">
-          <!-- ABOUT ME - Top (Full Width) -->
+          <!-- ABOUT ME Section -->
           <div class="about-section">
             <h1 class="section-title">ABOUT ME</h1>
             <p class="about-text">
@@ -49,124 +41,95 @@
             </p>
           </div>
 
-          <!-- Middle and Bottom Rows Combined -->
+          <!-- Content Grid -->
           <div class="content-grid">
-            <!-- Left Side - Student & Tech Stack -->
+            <!-- Left Content -->
             <div class="left-content">
-              <!-- Student & Backend Developer -->
+              <!-- Student Card -->
               <div class="student-card">
                 <div class="student-text">
                   <div class="student-line">
-                    <h1><b> Student & </b></h1>
+                    <h1>Student &</h1>
                   </div>
                   <div class="student-line">
-                    <h1><b>Backend Developer</b></h1>
+                    <h1>Backend Developer</h1>
                   </div>
                 </div>
               </div>
 
               <!-- Tech Stack -->
               <div class="tech-stack-card">
-                <h3 class="tech-title">Tech Stack</h3>
+                <h3 class="tech-title">TECH STACK</h3>
                 <div class="tech-stack-container">
                   <div class="orbit">
-                    <div class="orbit-item">
-                      <img src="assets\js01-svgrepo-com.svg" alt="JavaScript" />
+                    <div class="orbit-item" data-tooltip="JavaScript">
+                      <img src="assets/js01-svgrepo-com.svg" alt="JavaScript" />
                     </div>
 
-                    <div class="orbit-item">
-                      <img
-                        src="assets\logo-ts-svgrepo-com.svg"
+                    <div class="orbit-item" data-tooltip="TypeScript">
+                      <img class="ts" 
+                        src="assets/logo-ts-svgrepo-com.svg"
                         alt="TypeScript"
                       />
                     </div>
 
-                    <div class="orbit-item">
+                    <div class="orbit-item" data-tooltip="Node.js">
                       <img
-                        src="assets\nodejs02-svgrepo-com.svg"
+                        src="assets/nodejs02-svgrepo-com.svg"
                         alt="Node.js"
                       />
                     </div>
 
-                    <div class="orbit-item">
+                    <div class="orbit-item" data-tooltip="Express.js">
                       <img
-                        src="assets\express-svgrepo-com.svg"
+                        src="assets/express-svgrepo-com.svg"
                         alt="express.js"
                       />
                     </div>
                   </div>
+                  
                   <div class="orbit">
-                    <div class="orbit-item">
+                    <div class="orbit-item" data-tooltip="React.js">
                       <img
-                        src="assets\react-javascript-js-framework-facebook-svgrepo-com.svg"
+                        src="assets/react-javascript-js-framework-facebook-svgrepo-com.svg"
                         alt="react.js"
                       />
                     </div>
 
-                    <div class="orbit-item">
-                      <img src="assets\python-svgrepo-com.svg" alt="Python" />
+                    <div class="orbit-item" data-tooltip="Python">
+                      <img src="assets/python-svgrepo-com.svg" alt="Python" />
                     </div>
 
-                    <div class="orbit-item">
-                      <img src="assets\mongodb-svgrepo-com.svg" alt="MongoDB" />
+                    <div class="orbit-item" data-tooltip="MongoDB">
+                      <img src="assets/mongodb-svgrepo-com.svg" alt="MongoDB" />
                     </div>
 
-                    <div class="orbit-item">
-                      <img src="assets\cpp-svgrepo-com.svg" alt="C++" />
+                    <div class="orbit-item" data-tooltip="C++">
+                      <img src="assets/cpp-svgrepo-com.svg" alt="C++" />
                     </div>
                   </div>
+                  
                   <div class="orbit">
-
-                    <div class="orbit-item">
-                      <img src="assets\tailwind-svgrepo-com.svg" alt="Tailwind" />
+                    <div class="orbit-item" data-tooltip="Tailwind">
+                      <img src="assets/tailwind-svgrepo-com.svg" alt="Tailwind" />
                     </div>
 
-                    <div class="orbit-item">
-                      <img src="assets\flutter-svgrepo-com.svg" alt="Flutter" />
+                    <div class="orbit-item" data-tooltip="Flutter">
+                      <img src="assets/flutter-svgrepo-com.svg" alt="Flutter" />
                     </div>
 
-                    <div class="orbit-item">
-                      <img src="assets\dart-svgrepo-com.svg" alt="Dart" />
+                    <div class="orbit-item" data-tooltip="Dart">
+                      <img src="assets/dart-svgrepo-com.svg" alt="Dart" />
                     </div>
                     
-                    <div class="orbit-item">
-                      <img src="assets\flask-svgrepo-com.svg" alt="Flask" />
+                    <div class="orbit-item" data-tooltip="Flask">
+                      <img src="assets/flask-svgrepo-com.svg" alt="Flask" />
                     </div>
                   </div>
-                  </div>
                 </div>
               </div>
 
-              <!-- Right Side - Profile & Education -->
-              <div class="right-content">
-                <!-- Profile Section -->
-                <div class="profile-card">
-                  <!-- Profile Icon -->
-                  <div class="profile-icon">
-                    <svg
-                      class="profile-svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                  <h1 class="profile-name">ANSH MAHAJAN</h1>
-                </div>
-                <div class="right-column">
-                  <!-- Forest/Galaxy Image -->
-                  <div class="image-card"></div>
-
-                  <!-- Quote Section -->
-                  <div class="quote-card"></div>
-                </div>
-              </div>
-
-              <!-- Education Section -->
+              <!-- Education Card -->
               <div class="education-card">
                 <h3 class="education-title">EDUCATION</h3>
                 <div class="education-content">
@@ -178,10 +141,35 @@
                 </div>
               </div>
             </div>
+
+            <!-- Right Content -->
+            <div class="right-content">
+              <!-- Profile Card -->
+              <div class="profile-card">
+                <div class="profile-icon">
+                  <svg
+                    class="profile-svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+                <h1 class="profile-name">ANSH MAHAJAN</h1>
+              </div>
+
+              <!-- Image Card -->
+              <div class="image-card"></div>
+
+              <!-- Quote Card -->
+              <div class="quote-card"></div>
+            </div>
           </div>
         </div>
-
-        <!-- Right Column -->
       </div>
     </div>
   </body>
