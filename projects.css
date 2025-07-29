@@ -93,23 +93,8 @@ body {
   height: 10em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   margin-top: -6em;
-}
-
-.project-details {
-  background-color: rgba(33, 33, 33, 0.9);
-  border-radius: 1em;
-  padding: 1.5em;
-  width: 18em;
-  height: 10em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  margin-top: -6em;
-  
 }
 
 .project-details h2 {
@@ -117,9 +102,7 @@ body {
   font-weight: 500;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  margin-top: -0.6em;
-  align-self: flex-start;
-  margin-left: 0em;
+  margin-bottom: 0.5em;
 }
 
 .project-desc {
@@ -127,6 +110,18 @@ body {
   color: #878787;
   margin-bottom: 1em;
   line-height: 1.4;
+  flex-grow: 1;
+}
+
+.project-links {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -1.5em;
+  margin-top: 1em;
+  padding: 1em;
+  width: 18em;
+  border-radius: 1em;
+  background-color: rgba(33, 33, 33, 0.9);
 }
 
 .project-link {
@@ -136,18 +131,31 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-left: 7.2em;
+}
+
+.project-link img {
+  width: 1.3em;
+  height: 1.3em;
+  
 }
 
 .project-link:hover {
-  color: #0057c2;
-  transform: scale(1.1);
+  transform: scale(1.15);
+  background-color: #60a5fa;
+  fill: #60a5fa;
+  border-radius: 0.5em;
 }
 
 .github-icon {
-  width: 1.5em;
-  height: 1.5em;
-  fill: currentColor;
-  transition: fill 0.3s ease;
+  width: 1.3em;
+  height: 1.3em;
+  fill: white;
+  transition: fill 0.2s ease;
+}
+
+.vocalize-it:hover {
+  cursor: pointer;
 }
 
 /* Responsive */
@@ -160,43 +168,4 @@ body {
   .project-details {
     width: 90%;
   }
-}
-
-
-.project-link {
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease;
-}
-
-.project-link:hover {
-  transform: scale(1.15);
-}
-
-.github-icon {
-  width: 1.3em;
-  height: 1.3em;
-  fill: white;
-  transition: fill 0.2s ease;
-}
-
-.github-icon:hover {
-  fill: #60a5fa;
-}
-
-.project-links{
-    background-color: rgba(204, 79, 79, 0.9);
-    border-radius: 1em;
-    padding: 1.5em;
-    width: 2em;
-    height: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
 }
