@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ansh Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="contacts.css" />
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="projects.html" class="nav-link">PROJECTS</a>
+            <a href="contacts.html" class="nav-link active">CONTACT</a>
+        </div>
+    </nav>
+    
+    <div class="main-container">
+        <!-- Contact Cards -->
+        <div class="contact-cards">
+            <div class="contact-card email">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anshmahajan2006@gmail.com" target="_blank" class="mail-link" aria-label="Email Link">
+                    <img src="assets\mail-alt-3-svgrepo-com.svg" alt="Email" class="Email-icon" />
+                </a>
+            </div>
+            
+            <div class="contact-card linkedin">
+                <a href="https://www.linkedin.com/in/ansh-mahajan-46115a267/" target="_blank" class="linkedin-link" aria-label="linkedin Link">
+                    <img src="assets\linkedin-161-svgrepo-com.svg" alt="linkedin" class="linkedin-icon" />
+                </a>
+            </div>
+            
+            <div class="contact-card github">
+                <a href="https://github.com/Mercy036" target="_blank" class="github-link" aria-label="GitHub Link">
+                    <img src="assets\github-svgrepo-com.svg" alt="GitHub" class="github-icon" />
+                </a>
+                <span class="github-text">GitHub</span>
+                <span class="github-username">Find more of my repositories</span>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <h2 class="contact-title">CONTACT ME</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+    </div>
+</body>
+
+</html>
