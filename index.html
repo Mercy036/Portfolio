@@ -31,7 +31,7 @@
         <!-- Left Column -->
         <div class="left-column">
           <!-- ABOUT ME Section -->
-          <div class="about-section">
+          <div class="about-section animate-fadeInLeft delay-100">
             <h1 class="section-title">ABOUT ME</h1>
             <p class="about-text">
               Hi, I'm Ansh Mahajan, a passionate Full Stack Developer currently
@@ -46,7 +46,7 @@
             <!-- Left Content -->
             <div class="left-content">
               <!-- Student Card -->
-              <div class="student-card">
+              <div class="student-card animate-scaleIn delay-200">
                 <div class="student-text">
                   <div class="student-line">
                     <h1>Student &</h1>
@@ -58,7 +58,7 @@
               </div>
 
               <!-- Tech Stack -->
-              <div class="tech-stack-card">
+              <div class="tech-stack-card animate-fadeInUp delay-300">
                 <h3 class="tech-title">TECH STACK</h3>
                 <div class="tech-stack-container">
                   <div class="orbit">
@@ -120,7 +120,7 @@
               </div>
 
               <!-- Education Card -->
-              <div class="education-card">
+              <div class="education-card animate-fadeInLeft delay-400">
                 <h3 class="education-title">EDUCATION</h3>
                 <div class="education-content">
                   <div class="education-item">
@@ -135,7 +135,7 @@
             <!-- Right Content -->
             <div class="right-content">
               <!-- Profile Card -->
-              <div class="profile-card">
+              <div class="profile-card animate-scaleIn delay-500">
                 <div class="profile-icon">
                   <svg
                     class="profile-svg"
@@ -153,14 +153,50 @@
               </div>
 
               <!-- Image Card -->
-              <div class="image-card"></div>
+              <div class="image-card animate-fadeInRight delay-600"></div>
 
               <!-- Quote Card -->
-              <div class="quote-card"></div>
+              <div class="quote-card animate-fadeInRight delay-700"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      // Page load animation trigger
+      window.addEventListener('load', function() {
+        document.body.classList.add('page-loaded');
+      });
+
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = 'running';
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document.addEventListener('DOMContentLoaded', function() {
+        const animatedElements = document.querySelectorAll('[class*="animate-"]');
+        animatedElements.forEach(el => {
+          observer.observe(el);
+        });
+      });
+
+      // Add hover sound effects (optional)
+      document.querySelectorAll('.nav-link, .student-card, .tech-stack-card, .profile-card').forEach(element => {
+        element.addEventListener('mouseenter', function() {
+          this.style.transform = this.style.transform || '';
+        });
+      });
+    </script>
   </body>
 </html>
