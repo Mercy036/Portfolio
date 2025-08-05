@@ -406,6 +406,15 @@ body {
   cursor: pointer;
 }
 
+.orbit-item-last{
+  position: static;
+  width: 3em;
+  height: 3em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
 .orbit-item:hover {
   transform: scale(1.2) translateY(-5px);
   animation: float 2s ease-in-out infinite;
