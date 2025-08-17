@@ -10,10 +10,16 @@ body {
   min-height: 100vh;
   padding: 0.75em;
   font-family: 'Inter', sans-serif;
-  transform-origin: top left;
-  transform: scale(1.33);
-  width: 75%;
   overflow-x: hidden;
+  /* Using a more stable scaling approach */
+  font-size: 16px;
+}
+
+/* Scale container instead of body for better zoom compatibility */
+.scale-container {
+  transform: scale(1.33);
+  transform-origin: top left;
+  width: 75.18%;
 }
 
 /* Animation Keyframes */
@@ -225,34 +231,24 @@ body {
   transform: translateY(-1px);
 }
 
-/* Main Container */
+/* Main Container - Reduced width to bring sections closer */
 .main-container {
-  max-width: 60em;
+  max-width: 40em; /* Reduced from 60em to bring sections closer */
   margin: 0 auto;
+  position: relative;
+  height: 35em;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 0.56em;
-}
-
-/* Left Column */
-.left-column {
-  display: flex;
-  flex-direction: column;
-  gap: 0.56em;
-}
-
-/* About Section with Animation */
+/* About Section - Left column */
 .about-section {
   background-color: rgba(33, 33, 33, 1);
   padding: 0.38em;
   border-radius: 0.56em;
   width: 19.5em;
   height: 6em;
-  margin-left: 13.5em;
-  margin-top: 0.1em;
+  position: absolute;
+  left: 0em;
+  top: 0.65em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
 }
@@ -287,21 +283,7 @@ body {
   color: #f3f4f6;
 }
 
-/* Content Grid */
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.56em;
-}
-
-/* Left Content */
-.left-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.56em;
-}
-
-/* Student Card with Animation */
+/* Student Card - Left column */
 .student-card {
   background: linear-gradient(135deg, rgba(14, 91, 114, 1), rgba(20, 110, 140, 1));
   color: white;
@@ -312,9 +294,10 @@ body {
   padding: 0.75em;
   height: 4.5em;
   width: 9.94em;
-  margin-left: 13.5em;
+  position: absolute;
+  left: 0em;
+  top: 7.1em;
   transition: all 0.3s ease;
-  position: relative;
   overflow: hidden;
 }
 
@@ -354,13 +337,15 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-/* Tech Stack Card with Enhanced Animation */
+/* Tech Stack Card - Left column */
 .tech-stack-card {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 0.75em;
   border-radius: 0.56em;
   width: 9.94em;
-  margin-left: 13.5em;
+  position: absolute;
+  left: 0em;
+  top: 12.1em;
   height: 13.5em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
@@ -386,7 +371,7 @@ body {
   background-clip: text;
 }
 
-/* Orbit Animation */
+/* Orbit Animation - Restored Original Layout */
 .orbit {
   display: flex;
   justify-content: center;
@@ -394,14 +379,13 @@ body {
   gap: 15px;
   margin-left: 0em;
   transition: all 0.3s ease;
+  flex-wrap: wrap;
 }
-
-
 
 .orbit-item {
   position: static;
-  width: 3em;
-  height: 3em;
+  width: 1em;
+  height: 2em;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -413,7 +397,6 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 
 .orbit-item:hover {
   transform: scale(1.2) translateY(-5px);
@@ -439,14 +422,7 @@ body {
   left: -0.2em;
 }
 
-/* Right Content */
-.right-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.56em;
-}
-
-/* Profile Card with Animation */
+/* Profile Card - Middle column, positioned between left and right */
 .profile-card {
   background: linear-gradient(135deg, rgba(33, 33, 33, 0.9), rgba(45, 45, 45, 0.9));
   border-radius: 0.56em;
@@ -457,8 +433,8 @@ body {
   height: 9.75em;
   width: 9em;
   position: absolute;
-  top: 13.31em;
-  right: 32.85em;
+  top: 7.1em;
+  left: 10.5em; /* Positioned between left section and right section */
   transition: all 0.3s ease;
   border: 1px solid transparent;
 }
@@ -514,7 +490,7 @@ body {
   text-shadow: 0 0 15px rgba(100, 148, 226, 0.5);
 }
 
-/* Education Card with Animation */
+/* Education Card - Bottom, spans full width */
 .education-card {
   background: linear-gradient(135deg, rgba(33, 33, 33, 0.9), rgba(45, 45, 45, 0.9));
   padding: 0.75em;
@@ -522,8 +498,8 @@ body {
   height: 8.25em;
   width: 18.3em;
   position: absolute;
-  top: 23.53em;
-  right: 23.55em;
+  top: 17.4em;
+  left: 10.4em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
 }
@@ -584,7 +560,7 @@ body {
   color: #9ca3af;
 }
 
-/* Image Card with Animation */
+/* Image Card - Right column, moved closer to center */
 .image-card {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 0.38em;
@@ -595,8 +571,8 @@ body {
   width: 8.63em;
   height: 11.25em;
   position: absolute;
-  right: 23.78em;
-  top: 6.75em;
+  right: 11.3em; /* Moved closer to center */
+  top: 0.6em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
   filter: brightness(0.9);
@@ -609,7 +585,7 @@ body {
   filter: brightness(1.1);
 }
 
-/* Quote Card with Animation */
+/* Quote Card - Right column, moved closer to center */
 .quote-card {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 0.75em;
@@ -620,8 +596,8 @@ body {
   background-image: url('assets/quote.png');
   background-size: cover;
   position: absolute;
-  right: 23.78em;
-  top: 17.63em;
+  right: 11.3em; /* Moved closer to center */
+  top: 12em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
   filter: brightness(0.9);
@@ -683,45 +659,65 @@ body {
 .page-loaded .animate-fadeInUp:nth-child(4) { animation-delay: 0.4s; }
 .page-loaded .animate-fadeInUp:nth-child(5) { animation-delay: 0.5s; }
 
-/* Responsive Design */
-@media (max-width: 48em) {
-  .main-container {
-    padding: 0 0.56em;
+/* Zoom-responsive adjustments */
+@media screen and (min-width: 1px) {
+  .scale-container {
+    /* Adjust scaling based on viewport to maintain consistency across zoom levels */
+    transform: scale(calc(1.33 * var(--zoom-factor, 1)));
   }
-  
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 0.75em;
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 75em) {
+  .scale-container {
+    transform: scale(1.2);
+    width: 83.33%;
   }
-  
-  .about-section {
+}
+
+@media (max-width: 65em) {
+  .scale-container {
+    transform: scale(1.1);
+    width: 90.91%;
+  }
+}
+
+@media (max-width: 55em) {
+  .scale-container {
+    transform: scale(1);
     width: 100%;
-    margin-left: 0;
   }
   
+  /* Switch to stacked layout for smaller screens */
+  .about-section,
   .student-card,
-  .tech-stack-card {
-    width: 100%;
-    margin-left: 0;
-  }
-  
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .navbar {
-    margin-bottom: 2.25em;
-  }
-  
-  /* Reset positions for mobile */
+  .tech-stack-card,
   .profile-card,
   .education-card,
   .image-card,
   .quote-card {
     position: relative;
-    top: auto;
+    left: auto;
     right: auto;
+    top: auto;
     width: 100%;
-    margin: 0;
+    margin: 1em 0;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 48em) {
+  .navbar {
+    margin-bottom: 2.25em;
+  }
+  
+  .nav-link {
+    font-size: 0.8em;
+    padding: 0.4em 0.8em;
   }
 }
