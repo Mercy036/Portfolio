@@ -247,7 +247,7 @@ body {
   width: 19.5em;
   height: 6em;
   position: absolute;
-  left: 0em;
+  left: 3em;
   top: 0.65em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
@@ -295,7 +295,7 @@ body {
   height: 4.5em;
   width: 9.94em;
   position: absolute;
-  left: 0em;
+  left: 3em;
   top: 7.1em;
   transition: all 0.3s ease;
   overflow: hidden;
@@ -344,7 +344,7 @@ body {
   border-radius: 0.56em;
   width: 9.94em;
   position: absolute;
-  left: 0em;
+  left: 3em;
   top: 12.1em;
   height: 13.5em;
   transition: all 0.3s ease;
@@ -434,7 +434,7 @@ body {
   width: 9em;
   position: absolute;
   top: 7.1em;
-  left: 10.5em; /* Positioned between left section and right section */
+  left: 13.5em; /* Positioned between left section and right section */
   transition: all 0.3s ease;
   border: 1px solid transparent;
 }
@@ -499,7 +499,7 @@ body {
   width: 18.3em;
   position: absolute;
   top: 17.4em;
-  left: 10.4em;
+  left: 13.4em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
 }
@@ -571,7 +571,7 @@ body {
   width: 8.63em;
   height: 11.25em;
   position: absolute;
-  right: 11.3em; /* Moved closer to center */
+  right: 8.3em; /* Moved closer to center */
   top: 0.6em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
@@ -596,7 +596,7 @@ body {
   background-image: url('assets/quote.png');
   background-size: cover;
   position: absolute;
-  right: 11.3em; /* Moved closer to center */
+  right: 8.3em; /* Moved closer to center */
   top: 12em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
