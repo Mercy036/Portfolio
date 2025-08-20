@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,14 +15,12 @@ body {
   font-size: 16px;
 }
 
-/* Scale container instead of body for better zoom compatibility */
 .scale-container {
   transform: scale(1.33);
   transform-origin: top left;
   width: 75.18%;
 }
 
-/* Animation Keyframes */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -123,7 +121,6 @@ body {
   }
 }
 
-/* Animation Classes */
 .animate-fadeInUp {
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
@@ -154,7 +151,6 @@ body {
   opacity: 0;
 }
 
-/* Staggered animation delays */
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
@@ -164,7 +160,6 @@ body {
 .delay-700 { animation-delay: 0.7s; }
 .delay-800 { animation-delay: 0.8s; }
 
-/* Navbar Styles with Animation */
 .navbar {
   display: flex;
   justify-content: center;
@@ -231,15 +226,14 @@ body {
   transform: translateY(-1px);
 }
 
-/* Main Container - Reduced width to bring sections closer */
 .main-container {
-  max-width: 40em; /* Reduced from 60em to bring sections closer */
+  max-width: 40em; 
   margin: 0 auto;
   position: relative;
   height: 35em;
 }
 
-/* About Section - Left column */
+
 .about-section {
   background-color: rgba(33, 33, 33, 1);
   padding: 0.38em;
@@ -283,7 +277,6 @@ body {
   color: #f3f4f6;
 }
 
-/* Student Card - Left column */
 .student-card {
   background: linear-gradient(135deg, rgba(14, 91, 114, 1), rgba(20, 110, 140, 1));
   color: white;
@@ -337,7 +330,7 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-/* Tech Stack Card - Left column */
+
 .tech-stack-card {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 0.75em;
@@ -371,7 +364,7 @@ body {
   background-clip: text;
 }
 
-/* Orbit Animation - Restored Original Layout */
+
 .orbit {
   display: flex;
   justify-content: center;
@@ -422,7 +415,6 @@ body {
   left: -0.2em;
 }
 
-/* Profile Card - Middle column, positioned between left and right */
 .profile-card {
   background: linear-gradient(135deg, rgba(33, 33, 33, 0.9), rgba(45, 45, 45, 0.9));
   border-radius: 0.56em;
@@ -434,7 +426,7 @@ body {
   width: 9em;
   position: absolute;
   top: 7.1em;
-  left: 13.5em; /* Positioned between left section and right section */
+  left: 13.5em; 
   transition: all 0.3s ease;
   border: 1px solid transparent;
 }
@@ -560,7 +552,6 @@ body {
   color: #9ca3af;
 }
 
-/* Image Card - Right column, moved closer to center */
 .image-card {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 0.38em;
@@ -571,7 +562,7 @@ body {
   width: 8.63em;
   height: 11.25em;
   position: absolute;
-  right: 8.3em; /* Moved closer to center */
+  right: 8.3em; 
   top: 0.6em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
@@ -585,7 +576,6 @@ body {
   filter: brightness(1.1);
 }
 
-/* Quote Card - Right column, moved closer to center */
 .quote-card {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 0.75em;
@@ -596,7 +586,7 @@ body {
   background-image: url('assets/quote.png');
   background-size: cover;
   position: absolute;
-  right: 8.3em; /* Moved closer to center */
+  right: 8.3em;
   top: 12em;
   transition: all 0.3s ease;
   border: 1px solid transparent;
@@ -610,7 +600,6 @@ body {
   filter: brightness(1.1);
 }
 
-/* Enhanced Tooltip Animation */
 .orbit-item {
   position: relative;
   cursor: pointer;
@@ -652,22 +641,19 @@ body {
   animation: fadeInUp 0.3s ease-out 0.1s forwards;
 }
 
-/* Page Load Animation */
 .page-loaded .animate-fadeInUp:nth-child(1) { animation-delay: 0.1s; }
 .page-loaded .animate-fadeInUp:nth-child(2) { animation-delay: 0.2s; }
 .page-loaded .animate-fadeInUp:nth-child(3) { animation-delay: 0.3s; }
 .page-loaded .animate-fadeInUp:nth-child(4) { animation-delay: 0.4s; }
 .page-loaded .animate-fadeInUp:nth-child(5) { animation-delay: 0.5s; }
 
-/* Zoom-responsive adjustments */
+
 @media screen and (min-width: 1px) {
   .scale-container {
-    /* Adjust scaling based on viewport to maintain consistency across zoom levels */
     transform: scale(calc(1.33 * var(--zoom-factor, 1)));
   }
 }
 
-/* Enhanced Responsive Design */
 @media (max-width: 75em) {
   .scale-container {
     transform: scale(1.2);
@@ -688,7 +674,6 @@ body {
     width: 100%;
   }
   
-  /* Switch to stacked layout for smaller screens */
   .about-section,
   .student-card,
   .tech-stack-card,

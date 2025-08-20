@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Animation Keyframes */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -126,7 +124,6 @@ body {
     }
 }
 
-/* Animation Classes */
 .animate-fadeInUp {
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;
@@ -152,7 +149,6 @@ body {
     opacity: 0;
 }
 
-/* Staggered animation delays */
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
@@ -160,7 +156,6 @@ body {
 .delay-500 { animation-delay: 0.5s; }
 .delay-600 { animation-delay: 0.6s; }
 
-/* Navbar Styles with Animation */
 .navbar {
     display: flex;
     justify-content: center;
@@ -228,13 +223,11 @@ body {
     transform: translateY(-1px);
 }
 
-/* Main Container */
 .main-container {
     max-width: 45em;
     margin: 0 auto;
 }
 
-/* Contact Cards Grid with Animation */
 .contact-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -285,7 +278,6 @@ body {
     border: 1px solid rgba(96, 165, 250, 0.3);
 }
 
-/* Grid positioning for cards */
 .contact-card.email {
     grid-column: span 2;
     grid-row: 1;
@@ -376,7 +368,6 @@ body {
     animation: glow 2s infinite;
 }
 
-/* SVG Icons */
 .contact-card svg {
     width: 1em;
     height: 1em;
@@ -390,7 +381,6 @@ body {
     opacity: 1;
 }
 
-/* Contact Form Section with Animation */
 .contact-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -495,7 +485,6 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Link styling for contact cards */
 .contact-card a {
     display: flex;
     flex-direction: column;
@@ -509,20 +498,17 @@ body {
     z-index: 2;
 }
 
-/* Enhanced hover effects for links */
 .mail-link:hover,
 .linkedin-link:hover,
 .github-link:hover {
     transform: scale(1.05);
 }
 
-/* Page load animations */
 .page-loaded .animate-fadeInUp:nth-child(1) { animation-delay: 0.1s; }
 .page-loaded .animate-fadeInUp:nth-child(2) { animation-delay: 0.2s; }
 .page-loaded .animate-fadeInUp:nth-child(3) { animation-delay: 0.3s; }
 .page-loaded .animate-scaleIn:nth-child(1) { animation-delay: 0.4s; }
 
-/* Success animation for form submission */
 @keyframes success {
     0% {
         transform: scale(1);
@@ -541,7 +527,6 @@ body {
     background: linear-gradient(135deg, #10b981, #34d399);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     body {
         transform: scale(1);
@@ -580,7 +565,6 @@ body {
         max-width: 400px;
     }
 
-    /* Disable some animations on mobile for better performance */
     .contact-card::before {
         display: none;
     }
